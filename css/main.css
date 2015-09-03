@@ -1,0 +1,160 @@
+/* add custom styles */
+body {
+  padding: 5px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+h1 {
+
+}
+h2 {
+
+}
+h3 {
+
+}
+h4 {
+
+}
+h5 {
+
+}
+
+
+
+/* logo/ timer area */
+.logo {
+  border: solid 1px black;
+}
+#timer {
+  border: solid 1px black;
+}
+/* end logo/ timer area */
+
+
+/* language start & end area */
+.languages {
+  width: 25%;
+  position: fixed;
+  top: 15px;
+  right: 30%;
+  z-index: 0;
+  border: solid 1px black;
+}
+#start {
+  width: 15%;
+  position: fixed;
+  top: 0%;
+  right: 50%;
+  z-index: 0;
+  border: solid 1px black;
+  border: solid 1px black;
+}
+#arrow1 {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 0%;
+  right: 45%;
+  z-index: 0;
+  border: solid 1px black;
+}
+#end {
+  width: 15%;
+  position: fixed;
+  top: 0%;
+  right: 30%;
+  z-index: 0;
+  border: solid 1px black;
+}
+#startLang {
+  width: 15%;
+  position: fixed;
+  top: 15%;
+  right: 50%;
+  z-index: 0;
+  border: solid 1px black;
+}
+#endLang {
+  width: 15%;
+  position: fixed;
+  top: 15%;
+  right: 30%;
+  z-index: 0;
+  border: solid 1px black;
+}
+/* end language start & end area */
+
+
+
+/* play area */
+.playArea {
+  border: solid 1px black;
+}
+#word {
+  border: solid 1px black;
+}
+#arrow2 {
+  border: solid 1px black;
+}
+#guessInput {
+  border: solid 1px black;
+}
+/* end play area */
+
+
+
+/* checking answers area */
+#guessHeader {
+  border: solid 1px black;
+}
+#greenArrow {
+  border: solid 1px black;
+}
+#guess {
+  border: solid 1px black;
+}
+      /* validation area */
+#correct {
+  border: solid 1px black;
+}
+#wrong {
+  border: solid 1px black;
+}
+      /* endvalidation area */
+
+/* end checking answers area */
+
+
+/* progress bar area */
+.progressBar {
+  width: 30%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  z-index: 0;
+  text-align: center;
+  border: solid 1px black;
+}
+#progress {
+  border: solid 1px black;
+}
+#challenges {
+  border: solid 1px black;
+}
+#circle1 {
+  border: solid 1px black;
+}
+#words {
+  border: solid 1px black;
+}
+#circle2 {
+  border: solid 1px black;
+}
+/* end progress bar area */
+

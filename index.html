@@ -22,18 +22,20 @@
 <!-- language start & end area-->
   <div class= "languages">
     <span id= "start">
-      {{ start }}
-      <h3>#start</h3>
+      <h3>{{ start }}</h3>
     </span>
       <div id= "arrow1">
-        {{ arrow }}
-        <img src="images/arrow.png" alt="arrow">
+        <img src="images/arrowRight.png" alt="arrow" id="arrow1_image" width="5%" size="5%">
       </div>
     <span id= "end">
-      {{ end }}
-      <h3>#end</h3>
+      <h3>{{ end }}</h3>
     </span>
   </div>
+
+  <!--drop down area -->
+    <img src="images/greenArrow.png" alt="arrow" id="greenArrow" width="5%" size="5%">
+
+    <img src="images/blackArrow.png" alt="arrow" id="blackArrow" width="5%" size="5%">
 
   <div class="btn-group" id="startLang">
     <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
@@ -58,6 +60,7 @@
         <li><a href="#">#French</a></li>
       </ul>
   </div>
+  <!--end drop down area -->
 
 <!-- end language start & end area-->
 
@@ -85,7 +88,7 @@
     <div id= "guessHeader">
       <h1>guess</h1>
     </div>
-      <img src="images/greenArrow" alt="greenArrow" id="greenArrow">
+      <img src="images/greenArrow" alt="greenArrow" id="greenArrow2">
     <div id= "guess">
       {{ guess }}
       <h2>#guess</h2>

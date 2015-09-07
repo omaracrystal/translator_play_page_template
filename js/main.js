@@ -36,7 +36,7 @@ var guess = {};
 | |  Click  Events   | |
  \ \                /*/
 
-//modal area
+//modal 1 area
 $('#startGame').on('click', function {
   e.preventDefault();
 //based on stored values for startLang and endLang the {{ random word }} section will be generated based off start lang.
@@ -55,14 +55,26 @@ $('#guessInput').on('submit' fuction {
 //*****// need help to store translated answer from the random word generated
 ?  answer.push(_____________);
 
-
   //grab value of guess Input area
   var guessInput = $('#guessInput').val;
   //push value of guessInput into global variable guess
   guess.push(guessInput);
 
-  //check to see if guess and
+  //check to see if guess and answer are the same
+  checkAnswer(guess, answer);
+
+  //launch modal pop up
+ ?
+
+  //append values to modal pop up
+  checkAnswerAppender(guess, answer);
+
 });
+
+//pop up modal once 'submit guess' is clicked
+$(#nextWord).on('click', function () {
+  //generate another random word based on startLang
+})
 
 
  /*/                \ \
@@ -76,6 +88,14 @@ function checkAnswer (guess, answer) {
     return wordsFail =- 1;
   }
 }
+//onto modal
+function checkAnswerAppender (guess, answer) {
+
+}
+
+function wordCounterAppender (words, wordsPass, wordsFail) {
+
+}
 
 function roundCounter (words, wordsFail, wordsPass) {
   //for every 10 words
@@ -88,15 +108,23 @@ function roundCounter (words, wordsFail, wordsPass) {
 
 }
 
+function roundCounterAppender (rounds, roundsPass, roundsFail) {
+
+}
+
+
 //progreess tracker is the average of passed words and rounds
 function progressTracker (words, wordsPass, rounds, roundsPass) {
   var wordsAvg = wordsPass/words;
   var roundsAvg = roundsPass/rounds;
   //avg of both
-  var progress = (wordsAvg + roundsAvg)/2 + "%";
+  var progress = (wordsAvg + roundsAvg)/2;
+  return progress;
+}
 
+function progressTrackerAppender (progress) {
   //append value to progressBar section
-?  $('#progress').text().append("progress" + progress);
+?  $('#progress').text().append("progress" + progress + "%");
   //based on progress value fill in progressBar
 ?  $('#progressBar');
 }

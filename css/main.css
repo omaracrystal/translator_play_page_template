@@ -1,6 +1,38 @@
 /* add custom styles */
+
+@media screen and (max-width: 800px) {
+  .progressBar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .containerLeft {
+    position: fixed;
+    min-width: 600px;
+    max-width: 800px;
+  }
+}
+
+.btn {
+  border-radius: 25px;
+}
+
+.btn-primary {
+    background: black;
+}
+
+.btn-danger {
+  background: black;
+  border: black;
+}
+
+.btn-danger:hover {
+  background: #5CB85C;
+}
+
 body {
-  padding: 5px;
+  padding: 0px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -9,10 +41,10 @@ a {
 }
 
 h1 {
-
+  font-size: 60px;
 }
 h2 {
-
+  font-size: 250%;
 }
 h3 {
 
@@ -24,86 +56,67 @@ h5 {
 
 }
 
-
+/*.containerLeft{
+  min-width: 800px;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  border: solid 1px red;
+  z-index: 2;
+}*/
 
 /* logo/ timer area */
 .logo {
-  border: solid 1px black;
+  max-width: 350px;
+  min-width: 200px;
+  position: fixed;
+  top: 0%;
+  left: 2%;
+  z-index: 0;
+  /*border: solid 1px black;*/
 }
 #timer {
-  border: solid 1px black;
+  /*border: solid 1px black;*/
 }
 /* end logo/ timer area */
 
 
 /* language start & end area */
-.languages {
-  width: 25%;
-  position: fixed;
-  top: 15px;
-  right: 30%;
-  z-index: 0;
-  border: solid 1px black;
-}
 #start {
   width: 15%;
   position: fixed;
-  top: 15px;
+  top: 3%;
   right: 55%;
   text-align: center;
   z-index: 0;
-  border: solid 1px black;
+  /*border: solid 1px black;*/
 }
-#arrow1_image {
-  min-width: 60px;
+#startModal{
+  font-size: 33px;
+  font-color: green;
+  width: 15%;
   position: fixed;
-  top: 30px;
-  right: 46%;
-  z-index: 0;
-  border: solid 1px black;
-}
-#blackArrow {
-  max-width: 50px;
-  min-width: 40px;
-  position: fixed;
-  top: 15%;
-  right: 40%;
-  z-index: 0;
-  border: solid 1px black;
-}
-#greenArrow {
-  max-width: 50px;
-  min-width: 40px;
-  position: fixed;
-  top: 15%;
-  right: 65%;
-  z-index: 0;
-  border: solid 1px black;
+  top: 4%;
+  right: 52%;
+  text-align: center;
+  z-index: 2;
 }
 #end {
   width: 15%;
   position: fixed;
-  top: 15px;
+  top: 3%;
   right: 30%;
   text-align: center;
   z-index: 0;
-  border: solid 1px black;
+  /*border: solid 1px black;*/
 }
-#startLang {
-  width: 15%;
+#arrow1_image {
+  min-width: 60px;
   position: fixed;
-  top: 90px;
-  right: 55%;
+  top: 6%;
+  right: 46%;
   z-index: 0;
-  border: solid 1px black;
-}
-#endLang {
-  width: 15%;
-  position: fixed;
-  top: 90px;
-  right: 30%;
-  z-index: 0;
-  border: solid 1px black;
+  /*border: solid 1px black;*/
 }
 /* end language start & end area */
 
@@ -111,42 +124,52 @@ h5 {
 
 /* play area */
 .playArea {
-  border: solid 1px black;
+  /*border: solid 1px black;*/
 }
 #word {
-  border: solid 1px black;
+  width: 70%;
+  position: fixed;
+  top: 28%;
+  right: 30%;
+/*  border: solid 1px black;*/
+  text-align: center;
 }
-#arrow2 {
-  border: solid 1px black;
+#arrowDown {
+  max-width: 40px;
+  min-width: 20px;
+  position: fixed;
+  top: 55%;
+  right: 62%;
+  /*border: solid 1px black;*/
 }
 #guessInput {
-  border: solid 1px black;
+  width: 60%;
+  position: fixed;
+  top: 70%;
+  right: 35%;
+}
+input, input[placeholder]{
+font-weight:bold;
+    color: green;
+    text-align:center;
+border-radius: 25px;
+}
+#submit {
+  width: 20%;
+  position: fixed;
+  top: 78%;
+  right: 55%;
+  border-radius: 25px;
 }
 /* end play area */
 
-
-
-/* checking answers area */
-#guessHeader {
-  border: solid 1px black;
+/* OPTIONAL */
+#modal-746724 {
+  width:70%;
+  position: fixed;
+  bottom: 10%;
+  right: 30%;
 }
-#greenArrow2 {
-  border: solid 1px black;
-}
-#guess {
-  border: solid 1px black;
-}
-      /* validation area */
-#correct {
-  border: solid 1px black;
-}
-#wrong {
-  border: solid 1px black;
-}
-      /* endvalidation area */
-
-/* end checking answers area */
-
 
 /* progress bar area */
 .progressBar {
@@ -155,24 +178,30 @@ h5 {
   position: fixed;
   top: 0px;
   right: 0px;
+  background: #A3CCCC;
   z-index: 0;
   text-align: center;
-  border: solid 1px black;
+  /*border: solid 1px black;*/
+}
+.progress {
+  width: 90%;
+  position: relative;
+  right: -5%;
+  border-radius: 25px;
 }
 #progress {
-  border: solid 1px black;
+  /*border: solid 1px black;*/
 }
 #challenges {
-  border: solid 1px black;
+  /*border: solid 1px black;*/
 }
 #circle1 {
-  border: solid 1px black;
+  /*border: solid 1px black;*/
 }
 #words {
-  border: solid 1px black;
+  /*border: solid 1px black;*/
 }
 #circle2 {
-  border: solid 1px black;
+  /*border: solid 1px black;*/
 }
 /* end progress bar area */
-
